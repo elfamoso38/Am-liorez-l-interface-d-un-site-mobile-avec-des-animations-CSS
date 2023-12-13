@@ -2,6 +2,15 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: red;
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+
+header {
+  width: 100%;
+}
+
+.header_logo {
+  width: 40%;
 }
