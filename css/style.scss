@@ -1,0 +1,75 @@
+@import "_commun";
+body {
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  /****header****/
+  header {
+    width: 100%;
+  }
+  
+  .header_shadow {
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .header_location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.12rem;
+    background: #eaeaea;
+    color: #353535;
+    font-weight: 500;
+    gap: 1.06rem;
+  }
+  
+  .header_location input {
+    color: #353535;
+    font-size: 1.6rem;
+    background: transparent;
+    border: none;
+  }
+  
+  /****section info****/
+  .info {
+    background: #f6f6f6;
+  }
+  
+  .info2 {
+    width: 100%;
+    text-align: center;
+    padding: 2.44rem 0 3.56rem 0;
+  }
+  
+  .info2 h1 {
+    margin: 0 2.63rem;
+  }
+  
+  .info2 p {
+    margin: 0.5rem 1.63rem 1.69rem 2.12rem;
+    font-weight: 300;
+  }
+  
+  .btn {
+    width: 13.62rem;
+    height: 3.12rem;
+    align-items: center;
+    border: none;
+    color: #fff;
+    text-align: center;
+    border-radius: 1.56rem;
+    background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+    padding: 0.81rem 1.17rem;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+  }
+  
+
