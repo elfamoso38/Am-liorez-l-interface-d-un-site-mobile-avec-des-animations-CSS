@@ -18,7 +18,7 @@
     <div class="header_location">
         <i class="fa-solid fa-location-dot"></i>
         <form>
-            <input type="search" placeholder="Paris, Belleville">
+            <input type="text" id="location" name="name" required value="Paris, Belleville">
         </form>
     </div>
     <div class="info">
@@ -26,28 +26,30 @@
         <h1>Réservez le menu qui
         vous convient</h1>
         <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <a href="#restaurants" class="btn">Explorer nos restaurants</a>
+        <a href="#restaurants" class="btn">
+            Explorer nos restaurants
+        </a>
         </div>
     </div>
     <section class="fonctionnement">
         <h2>Fonctionnement</h2>
         <ul class="card_fonctionnement">
-            <li>
-                <div>
-                <p>1</p>
+            <li class="card_fonctionnement2">
+                <div class="card_fonctionnement_number">
+                    <p>1</p>
                 </div>
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <p>Choisissez un restaurant</p>
             </li>
-            <li>
-                <div>
+            <li class="card_fonctionnement2">
+                <div class="card_fonctionnement_number">
                     <p>2</p>
                 </div>
                 <i class="fa-solid fa-list"></i>
                 <p>Composez votre menu</p>
             </li>
-            <li>
-                <div>
+            <li class="card_fonctionnement2">
+                <div class="card_fonctionnement_number">
                     <p>3</p>
                 </div>
                 <i class="fa-solid fa-store"></i>
@@ -55,14 +57,22 @@
             </li>
         </ul>
     </section>
-    <section>
-        <h2>Restaurants</h2>
+    <section class="restaurant">
+        <h2 id="restaurants">Restaurants</h2>
         <div class="card_restaurant">
-            <article>
+            <article class="card_restaurant2">
                 <a href="menu1.html">
-                    <img src="restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat du restaurant la palette du gout">
-                    <div>
+                    <img class="image_card" src="restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+                    alt="photo d'un plat du restaurant la palette du gout">
+                    <div class="badge_new">
                         <p>Nouveau</p>
                     </div>
+                    <div class="card_restaurant_content">
+                        <div class="card_restaurant_txt">
+                            <h3 class="card_restaurant_title">La palette du gout</h3>
+                            <p class="card_restaurant_subtitle">Ménilmontant</p>
+                        </div>
+                    </div>
+                </a>
 </body>
 </html>

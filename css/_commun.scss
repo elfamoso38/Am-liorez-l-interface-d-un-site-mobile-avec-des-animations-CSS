@@ -1,9 +1,27 @@
 body {
     text-align: center;
-  }
+  } 
 
-  header,.card_restaurant,.info2 {
+  header, .info2, 
+  .card_restaurant, .card_fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .header_location, .card_fonctionnement_number, 
+  .card_fonctionnement2, .card_restaurant_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fonctionnement {
+    margin: 3.56rem 1.25rem;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  
