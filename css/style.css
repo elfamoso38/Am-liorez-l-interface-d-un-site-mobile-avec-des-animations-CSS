@@ -3,6 +3,13 @@ body {
   text-align: center;
 }
 
+h1,
+h2, h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
 header, .info2,
 .card_restaurant, .card_fonctionnement {
   display: flex;
@@ -25,14 +32,19 @@ ul, li {
   list-style: none;
 }
 
+.heart_btnlike .fa-heart {
+  font-size: 1.37rem;
+}
+
 body {
   text-align: center;
 }
 
-h1,
-h2 {
-  font-size: 1.5rem;
-  font-family: 'Roboto';
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /****header****/
@@ -58,6 +70,7 @@ header {
 }
 
 .header_location input {
+  width: 6.81rem;
   color: #353535;
   font-size: 1.6rem;
   background: transparent;
@@ -99,7 +112,7 @@ header {
   z-index: 1;
 }
 
-.btn::after {
+.btn:after {
   content: "";
   height: 3.12rem;
   border: none;
@@ -201,4 +214,45 @@ img {
 .card_restaurant_content {
   justify-content: space-between;
   padding: 1rem;
+}
+
+.card_restaurant_title {
+  margin: 5px 0 5px 0;
+}
+
+.card_restaurant_txt {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heart {
+  width: 1.75rem;
+  position: absolute;
+  cursor: pointer;
+  color: #101010;
+}
+
+.heart2 {
+  bottom: 1.75rem;
+  right: 1.5rem;
+}
+
+.heart3 {
+  display: none;
+}
+
+.heart_btnlike::after {
+  content: "\f004";
+  font: var(--fa-font-solid);
+  font-size: 1.37rem;
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123123.93%);
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

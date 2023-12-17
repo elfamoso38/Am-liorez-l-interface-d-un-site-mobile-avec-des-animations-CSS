@@ -2,6 +2,13 @@ body {
   text-align: center;
 }
 
+h1,
+h2, h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
 header, .info2,
 .card_restaurant, .card_fonctionnement {
   display: flex;
@@ -22,4 +29,8 @@ header, .info2,
 
 ul, li {
   list-style: none;
+}
+
+.heart_btnlike .fa-heart {
+  font-size: 1.37rem;
 }
