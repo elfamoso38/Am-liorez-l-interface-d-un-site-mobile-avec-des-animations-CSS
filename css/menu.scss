@@ -1,6 +1,6 @@
 @import "_commun";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 .intro {
     position: relative;
     width: 100%;
@@ -9,6 +9,14 @@
     background: none;
     margin-bottom: -20%;
     overflow: hidden;
+}
+
+header .fa-arrow-left {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    padding: 0.3rem 0 0rem 1rem;
+    color: #353535;
 }
 
 .img_intro {
@@ -46,3 +54,80 @@ img {
     left: 18.75rem;
 }
 
+.menus h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+.heart3 {
+    display: none;
+}
+
+.card_menus {
+    width: 100%;
+    margin: auto;
+    max-width: 21.81rem;
+}
+
+.card_menus_title h2 {
+    font-size: 1rem;
+    margin: 2.5rem 0 0.75rem 0;
+}
+
+.fw300 {
+    font-weight: 100;
+}
+
+.card_menus2 {
+    position: relative;
+    width: 100%;
+    max-width: 21.81rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.94rem 0 0.94rem 0.94rem;
+    margin: 0.75rem 0 0.75rem 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 0.94rem;
+    background: var(--white, #fff);
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card_box {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+    width: 3.68rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0.94rem 0.94rem 0rem;
+    background: #99e2d0;
+}
+
+.cardbox_title {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardbox_title_2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+
+.cardbox_subtitle {
+    margin-top: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.94019rem;
+    font-weight: 300;
+}
