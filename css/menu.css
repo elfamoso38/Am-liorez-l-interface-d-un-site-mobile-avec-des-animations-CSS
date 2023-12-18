@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
 body {
   text-align: center;
 }
@@ -34,6 +36,35 @@ ul, li {
 
 .heart_btnlike .fa-heart {
   font-size: 1.37rem;
+}
+
+.heart
+input:not(:checked)
+.heart_btnlike .fa-heart {
+  animation: 300ms ease-in;
+  animation-name: normal;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+}
+
+.menus_title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menus_title1 {
+  font-family: 'Shrikhand', serif;
+  font-size: 1.12rem;
+  font-weight: 400;
 }
 
 .intro {
