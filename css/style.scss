@@ -60,39 +60,6 @@ body {
     margin: 0.5rem 1.63rem 1.69rem 2.12rem;
     font-weight: 300;
   }
-  
-  .btn {
-    width: 13.62rem;
-    height: 3.12rem;
-    align-items: center;
-    border: none;
-    color: #fff;
-    text-align: center;
-    border-radius: 1.56rem;
-    background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-    padding: 0.81rem 1.17rem;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    position: relative;
-    z-index: 1;
-  }
-
-  .btn:after {
-    content: "";
-    height: 3.12rem;
-    border: none;
-    border-radius: 1.56rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%,
-     rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    transition: opacity 250ms;
-    z-index: -1;
-  }
 
   /****section fonctionnement****/
 .fonctionnement {
@@ -127,21 +94,22 @@ body {
   background: #9356dc;
 }
 
-.fa-solid .fa-mobile-screen-button {
+.fa-mobile-screen-button, .fa-list, 
+.fa-store {
   width: 0.81rem;
   height: 1.24rem;
   color: #7e7e7e;
   margin-left: 1rem;
 }
 
+.fa-store {
+  color: #9356dc;
+}
+
 /****section restaurant****/
 .restaurant {
   background: #f6f6f6;
   padding-bottom: 4.12rem;
-}
-
-.restaurant h2 {
-  padding: 2rem 1.1rem;
 }
 
 .card_restaurant {
@@ -202,13 +170,6 @@ a {
   text-decoration: none;
 }
 
-.heart {
-  width: 1.75rem;
-  position: absolute;
-  cursor: pointer;
-  color: #101010;
-}
-
 .heart2 {
   bottom: 1.75rem;
   right: 1.5rem;
@@ -217,16 +178,3 @@ a {
 .heart3 {
   display: none;
 }
-
-.heart_btnlike::after {
-  content: "\f004";
-  font: var(--fa-font-solid);
-  font-size: 1.37rem;
-  position: absolute;
-  opacity: 0;
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123123.93%);
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-

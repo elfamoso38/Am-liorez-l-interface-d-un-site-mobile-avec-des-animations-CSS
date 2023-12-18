@@ -11,6 +11,12 @@ h2, h3 {
   font-weight: 700;
 }
 
+p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .header_logo {
   width: 40%;
   max-width: 10.12rem;
@@ -24,15 +30,34 @@ header, .info2,
   align-items: center;
 }
 
-.header_location, .card_fonctionnement_number,
+.btn, .header_location, .card_fonctionnement_number,
 .card_fonctionnement2, .card_restaurant_content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.btn {
+  width: 13.62rem;
+  height: 3.12rem;
+  align-items: center;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-radius: 1.56rem;
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
 .fonctionnement {
   margin: 3.56rem 1.25rem;
+}
+
+.restaurant h2, .fonctionnement h2 {
+  padding: 2rem 1.1rem;
+  margin-right: 20rem;
 }
 
 ul, li {
@@ -43,20 +68,18 @@ ul, li {
   font-size: 1.37rem;
 }
 
-.heart
-input:not(:checked)
-.heart_btnlike .fa-heart {
-  animation: 300ms ease-in;
-  animation-name: normal;
-  animation-duration: 300ms;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+.heart {
+  width: 1.75rem;
+  position: absolute;
+  cursor: pointer;
+  color: #101010;
 }
 
-.menus {
+.heart_menu {
+  left: 18.75rem;
+}
+
+.menus, footer {
   display: flex;
   flex-direction: column;
 }
@@ -64,6 +87,86 @@ input:not(:checked)
 .menus_title {
   display: flex;
   justify-content: flex-start;
+}
+
+.img_intro {
+  position: absolute;
+  min-height: 20.13rem;
+  bottom: 7.5%;
+  z-index: -1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.menus {
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.menus_title {
+  width: 100%;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.menus h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  width: 85%;
+}
+
+.heart3 {
+  display: none;
+}
+
+.card_menus_title {
+  width: 2.5rem;
+  line-height: 2rem;
+  border-bottom: 0.18rem solid #99e2d0;
+  padding-left: 0;
+}
+
+footer {
+  gap: 1rem;
+  padding: 1.38rem 1.56rem;
+  background: #353535;
+}
+
+.footer_title {
+  color: #fff;
+  font-family: "Shrikhand", serif;
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.footer_nav {
+  width: 100%;
+}
+
+.footer_nav_link {
+  color: #fff;
+  text-decoration: none;
+  gap: 1rem;
+  display: flex;
+  margin: 0.44rem;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fa-solid {
+  font-weight: 900;
+}
+
+.footer_nav_icon {
+  width: 1rem;
 }
 
 body {
@@ -127,38 +230,6 @@ header {
   font-weight: 300;
 }
 
-.btn {
-  width: 13.62rem;
-  height: 3.12rem;
-  align-items: center;
-  border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 1.56rem;
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-  padding: 0.81rem 1.17rem;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 1;
-}
-
-.btn:after {
-  content: "";
-  height: 3.12rem;
-  border: none;
-  border-radius: 1.56rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-  opacity: 0;
-  transition: opacity 250ms;
-  z-index: -1;
-}
-
 /****section fonctionnement****/
 .fonctionnement {
   margin: 3.56rem 1.25rem;
@@ -192,21 +263,22 @@ header {
   background: #9356dc;
 }
 
-.fa-solid .fa-mobile-screen-button {
+.fa-mobile-screen-button, .fa-list,
+.fa-store {
   width: 0.81rem;
   height: 1.24rem;
   color: #7e7e7e;
   margin-left: 1rem;
 }
 
+.fa-store {
+  color: #9356dc;
+}
+
 /****section restaurant****/
 .restaurant {
   background: #f6f6f6;
   padding-bottom: 4.12rem;
-}
-
-.restaurant h2 {
-  padding: 2rem 1.1rem;
 }
 
 .card_restaurant {
@@ -267,13 +339,6 @@ a {
   text-decoration: none;
 }
 
-.heart {
-  width: 1.75rem;
-  position: absolute;
-  cursor: pointer;
-  color: #101010;
-}
-
 .heart2 {
   bottom: 1.75rem;
   right: 1.5rem;
@@ -281,16 +346,4 @@ a {
 
 .heart3 {
   display: none;
-}
-
-.heart_btnlike::after {
-  content: "\f004";
-  font: var(--fa-font-solid);
-  font-size: 1.37rem;
-  position: absolute;
-  opacity: 0;
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123123.93%);
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

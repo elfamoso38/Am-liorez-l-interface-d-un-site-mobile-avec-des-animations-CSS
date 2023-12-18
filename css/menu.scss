@@ -19,59 +19,13 @@ header .fa-arrow-left {
     color: #353535;
 }
 
-.img_intro {
-    position: absolute;
-    min-height: 20.13rem;
-    bottom: 7.5%;
-    z-index: -1;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-.menus {
-    width: 100%;
-    background: #f6f6f6;
-    border-radius: 2.5rem 2.5rem 0 0;
-    padding: 2rem 1.06rem 2.5rem 1.06rem;
-}
-
-.menus_title {
-    width: 100%;
-    align-items: center;
-    gap: 0.75rem;
-    position: relative;
-}
-
-.menus_title1 {
-    font-size: 1.75rem;
-    width: 85%;
-}
-
-.heart_menu {
-    left: 18.75rem;
-}
-
-.menus h1 {
-    font-family: "Shrikhand", serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    margin: 0;
-  }
-
-.heart3 {
-    display: none;
-}
-
 .card_menus {
     width: 100%;
     margin: auto;
     max-width: 21.81rem;
 }
 
-.card_menus_title h2 {
+.card_menus h2 {
     font-size: 1rem;
     margin: 2.5rem 0 0.75rem 0;
 }
@@ -130,4 +84,9 @@ img {
     font-family: "Roboto", sans-serif;
     font-size: 0.94019rem;
     font-weight: 300;
+}
+
+.cta {
+    margin: 2.5rem auto;
+    text-decoration: none;
 }
