@@ -2,13 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 body {
     text-align: center;
-  }
-
-  *, *::before, *::after {
-    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font: inherit;
   }
   
   /****header****/
@@ -16,6 +10,7 @@ body {
     width: 100%;
   }
   
+
   .header_shadow {
     position: relative;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
@@ -178,4 +173,3 @@ a {
 .heart3 {
   display: none;
 }
-

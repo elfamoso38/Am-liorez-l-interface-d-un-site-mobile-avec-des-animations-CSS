@@ -3,11 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   text-align: center;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 h1,
 h2, h3 {
-  font-size: 1.5rem;
   font-family: 'Roboto';
   font-weight: 700;
 }
@@ -15,7 +22,10 @@ h2, h3 {
 p {
   font-family: "Roboto";
   font-size: 1rem;
-  font-weight: 500;
+}
+
+.fw300 {
+  font-weight: 100;
 }
 
 .header_logo {
@@ -47,9 +57,38 @@ header, .info2,
   text-align: center;
   font-family: "Roboto", sans-serif;
   border-radius: 1.56rem;
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   position: relative;
+  transition: opacity 2s, box-shadow 4s;
+  opacity: 1;
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
+  opacity: 0.4;
+}
+
+.heart_btnlike::after {
+  content: "\f004";
+  font: var(--fa-font-solid);
+  font-size: 1.37rem;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart input:checked +
+.heart_btnlike::after {
+  animation-duration: 300s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: initial;
 }
 
 .fonctionnement {
