@@ -49,6 +49,7 @@ header .fa-arrow-left {
     background: var(--white, #fff);
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    transition: padding 0.25s ease-in-out;
 }
 
 .card_box {
@@ -90,3 +91,4 @@ header .fa-arrow-left {
     margin: 2.5rem auto;
     text-decoration: none;
 }
+

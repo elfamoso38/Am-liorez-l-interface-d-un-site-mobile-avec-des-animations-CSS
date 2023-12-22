@@ -61,7 +61,6 @@ header, .info2,
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   transition: opacity 2s, box-shadow 4s;
-  opacity: 1;
 }
 
 .btn:hover {
@@ -69,7 +68,33 @@ header, .info2,
   opacity: 0.4;
 }
 
-.heart_btnlike::after {
+.heart_btnlike .heart_btnlike {
+  transform-origin: bottom;
+  transform: scale(0);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+
+.heart_btnlike:not(:checked) .heart2 .heart_btnlike:hover {
+  animation: 1.5s ease 0s infinite;
+}
+
+.heart_btnlike:checked + .heart2 .heart2 {
+  animation: like 0.7s cubic-bezier(0.87, 1, 0.38, 1.01) forwards;
+}
+
+.heart_btnlike:checked + .heart2 .heart_btnlike {
+  animation: like--BG 1s ease forwards;
+}
+
+.heart_btnlike:not(:checked) + .heart2 .heart2 {
+  animation: unlike 0.5s ease forwards;
+}
+
+.heart_btnlike:not(:checked) + .heart2 .heart_btnlike {
+  animation: nounlike 1s ease forwards;
+}
+
+.heart_btnlike .heart::after {
   content: "\f004";
   font: var(--fa-font-solid);
   font-size: 1.37rem;
@@ -78,23 +103,16 @@ header, .info2,
   bottom: 0;
   right: 0;
   left: 0;
-  opacity: 0;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.heart input:checked +
-.heart_btnlike::after {
-  animation-duration: 300s;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  animation-name: initial;
+input {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
 }
 
 .fonctionnement {
@@ -176,6 +194,7 @@ img {
   line-height: 2rem;
   border-bottom: 0.18rem solid #99e2d0;
   padding-left: 0;
+  animation: crescendo reverse 3000ms forwards;
 }
 
 footer {
@@ -263,6 +282,7 @@ header .fa-arrow-left {
   background: var(--white, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: padding 0.25s ease-in-out;
 }
 
 .card_box {

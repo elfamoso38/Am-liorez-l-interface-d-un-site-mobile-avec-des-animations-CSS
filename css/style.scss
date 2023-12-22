@@ -149,15 +149,16 @@ img {
 
 .card_restaurant_content {
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0 0 0 16px;
 }
 
 .card_restaurant_title {
   margin: 5px 0 5px 0;
 }
 
-.card_restaurant_txt {
-  margin: 0;
+.card_restaurant_txt h3 {
+  font-size: 18px;
+  margin: 16px 0 8px 0;
 }
 
 a {
@@ -173,3 +174,4 @@ a {
 .heart3 {
   display: none;
 }
+

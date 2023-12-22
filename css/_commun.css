@@ -59,7 +59,6 @@ header, .info2,
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   transition: opacity 2s, box-shadow 4s;
-  opacity: 1;
 }
 
 .btn:hover {
@@ -67,32 +66,22 @@ header, .info2,
   opacity: 0.4;
 }
 
-.heart_btnlike::after {
-  content: "\f004";
-  font: var(--fa-font-solid);
-  font-size: 1.37rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  background: linear-gradient(#9356dc, #ff79da);
+.fa-heart {
+  transform-origin: bottom;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.heart input:checked +
-.heart_btnlike::after {
-  animation-duration: 300s;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  animation-name: initial;
+input {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
 }
 
 .fonctionnement {
@@ -174,6 +163,7 @@ img {
   line-height: 2rem;
   border-bottom: 0.18rem solid #99e2d0;
   padding-left: 0;
+  animation: crescendo reverse 3000ms forwards;
 }
 
 footer {
