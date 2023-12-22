@@ -66,12 +66,32 @@ header, .info2,
   opacity: 0.4;
 }
 
-.fa-heart {
-  transform-origin: bottom;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-fill-color: transparent;
+.empty {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.full {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.full:hover {
+  color: transparent;
+  background-image: linear-gradient(10deg, #ff79da, #9356DC);
   -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 400ms;
+  opacity: 1;
 }
 
 input {
@@ -102,8 +122,6 @@ ul, li {
 }
 
 .heart {
-  width: 1.75rem;
-  position: absolute;
   cursor: pointer;
   color: #101010;
 }
