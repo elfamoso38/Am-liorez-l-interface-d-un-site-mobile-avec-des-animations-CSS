@@ -46,10 +46,10 @@ header .fa-arrow-left {
     cursor: pointer;
     box-sizing: border-box;
     border-radius: 0.94rem;
-    background: var(--white, #fff);
+    background: var(--White, #fff);
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: padding 0.25s ease-in-out;
+    animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
 }
 
 .card_box {
@@ -64,6 +64,25 @@ header .fa-arrow-left {
     align-items: center;
     border-radius: 0 0.94rem 0.94rem 0rem;
     background: #99e2d0;
+    transition: transform 750ms ease-in-out;
+    transform: translateX(0);
+}
+
+.card_box::after {
+    content: "\f00c";
+    font: var(--fa-font-solid);
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: auto;
+    border-radius: 50% 50%;
+    background: white;
+    color: #99e2d0;
+    animation: spinningOut 750ms ease-out;
 }
 
 .cardbox_title {
@@ -72,10 +91,11 @@ header .fa-arrow-left {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: width 750ms ease-in-out;
 }
 
 .cardbox_title_2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "roboto", sans-serif;
     font-size: 1.125rem;
     font-weight: 900;
 }
@@ -92,3 +112,11 @@ header .fa-arrow-left {
     text-decoration: none;
 }
 
+.cardbox_price {
+    margin: 1.25rem 1rem 0 1rem;
+    color: #353535;
+    font-family: "roboto", sans-serif;
+    font-size: 0.94rem;
+    font-weight: 700;
+    transition: margin 750ms ease-in-out;
+}

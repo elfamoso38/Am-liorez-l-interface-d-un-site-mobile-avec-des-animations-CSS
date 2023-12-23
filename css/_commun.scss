@@ -17,6 +17,10 @@ body {
     font-weight: 700;
   }
 
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
   p {
     font-family: "Roboto";
     font-size: 1rem;
@@ -58,10 +62,12 @@ body {
     background: linear-gradient( #ff79da, #9356dc);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     position: relative;
-    transition: opacity 2s, box-shadow 4s;
+    transition: opacity 250ms, box-shadow 300ms;
     &:hover {
-      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.75);
-      opacity: 0.4;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), 
+      linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+      opacity: 2;
     }
   }
 
@@ -126,7 +132,7 @@ body {
   }
 
   .heart_menu {
-    left: 18.75rem;
+    position: relative;
 }
 
   .menus, footer {
@@ -136,7 +142,8 @@ body {
 
   .menus_title {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .img_intro {
@@ -152,13 +159,16 @@ img {
 }
 
 .menus {
-    width: 100%;
-    background: #f6f6f6;
-    border-radius: 2.5rem 2.5rem 0 0;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 1.06rem 2.5rem 1.06rem;
 }
 
 .menus_title {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 0.75rem;
     position: relative;

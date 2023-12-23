@@ -19,6 +19,10 @@ h2, h3 {
   font-weight: 700;
 }
 
+h1, h2 {
+  font-size: 1.5rem;
+}
+
 p {
   font-family: "Roboto";
   font-size: 1rem;
@@ -68,41 +72,32 @@ header, .info2,
   opacity: 0.4;
 }
 
-.heart_btnlike .heart_btnlike {
-  transform-origin: bottom;
-  transform: scale(0);
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-}
-
-.heart_btnlike:not(:checked) .heart2 .heart_btnlike:hover {
-  animation: 1.5s ease 0s infinite;
-}
-
-.heart_btnlike:checked + .heart2 .heart2 {
-  animation: like 0.7s cubic-bezier(0.87, 1, 0.38, 1.01) forwards;
-}
-
-.heart_btnlike:checked + .heart2 .heart_btnlike {
-  animation: like--BG 1s ease forwards;
-}
-
-.heart_btnlike:not(:checked) + .heart2 .heart2 {
-  animation: unlike 0.5s ease forwards;
-}
-
-.heart_btnlike:not(:checked) + .heart2 .heart_btnlike {
-  animation: nounlike 1s ease forwards;
-}
-
-.heart_btnlike .heart::after {
-  content: "\f004";
-  font: var(--fa-font-solid);
-  font-size: 1.37rem;
+.empty {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  top: 83%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.full {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.full:hover {
+  color: transparent;
+  background-image: linear-gradient(10deg, #ff79da, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 400ms;
+  opacity: 1;
 }
 
 input {
@@ -133,14 +128,12 @@ ul, li {
 }
 
 .heart {
-  width: 1.75rem;
-  position: absolute;
   cursor: pointer;
   color: #101010;
 }
 
 .heart_menu {
-  left: 18.75rem;
+  position: relative;
 }
 
 .menus, footer {
@@ -150,7 +143,8 @@ ul, li {
 
 .menus_title {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .img_intro {
@@ -169,10 +163,13 @@ img {
   width: 100%;
   background: #f6f6f6;
   border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 1.06rem 2.5rem 1.06rem;
 }
 
 .menus_title {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
   position: relative;
@@ -279,10 +276,10 @@ header .fa-arrow-left {
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 0.94rem;
-  background: var(--white, #fff);
+  background: var(--White, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: padding 0.25s ease-in-out;
+  animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
 }
 
 .card_box {
@@ -297,6 +294,25 @@ header .fa-arrow-left {
   align-items: center;
   border-radius: 0 0.94rem 0.94rem 0rem;
   background: #99e2d0;
+  transition: transform 750ms ease-in-out;
+  transform: translateX(0);
+}
+
+.card_box::after {
+  content: "\f00c";
+  font: var(--fa-font-solid);
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: auto;
+  border-radius: 50% 50%;
+  background: white;
+  color: #99e2d0;
+  animation: spinningOut 750ms ease-out;
 }
 
 .cardbox_title {
@@ -305,10 +321,11 @@ header .fa-arrow-left {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: width 750ms ease-in-out;
 }
 
 .cardbox_title_2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 1.125rem;
   font-weight: 900;
 }
@@ -323,4 +340,13 @@ header .fa-arrow-left {
 .cta {
   margin: 2.5rem auto;
   text-decoration: none;
+}
+
+.cardbox_price {
+  margin: 1.25rem 1rem 0 1rem;
+  color: #353535;
+  font-family: "roboto", sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  transition: margin 750ms ease-in-out;
 }
