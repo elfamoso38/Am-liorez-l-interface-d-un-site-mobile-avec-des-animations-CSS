@@ -151,7 +151,12 @@ img {
 
 .card_restaurant_content {
   justify-content: space-between;
-  padding: 0 0 0 16px;
+}
+
+.card_restaurant_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
 .card_restaurant_title {
@@ -160,11 +165,15 @@ img {
 
 .card_restaurant_txt h3 {
   font-size: 18px;
-  margin: 16px 0 8px 0;
+  display: inline-block;
+  margin: 20px 0 0 15px;
+}
+
+.card_restaurant_subtitle {
+  margin: 5px 0 0 17px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-

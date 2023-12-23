@@ -195,15 +195,22 @@ img {
 
 footer {
   gap: 1rem;
-  padding: 1.38rem 1.56rem;
   background: #353535;
-}
+  padding: 1.38rem 1.56rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} 
 
 .footer_title {
   color: #fff;
   font-family: "Shrikhand", serif;
   font-size: 1.12rem;
   font-weight: 400;
+  display: flex;
+  width: 139px;
+  height: 27px;
+  padding-left: 1rem;
 }
 
 .footer_nav {

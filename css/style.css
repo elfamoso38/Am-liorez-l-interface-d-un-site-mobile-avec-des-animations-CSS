@@ -196,8 +196,11 @@ img {
 
 footer {
   gap: 1rem;
-  padding: 1.38rem 1.56rem;
   background: #353535;
+  padding: 1.38rem 1.56rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .footer_title {
@@ -205,6 +208,10 @@ footer {
   font-family: "Shrikhand", serif;
   font-size: 1.12rem;
   font-weight: 400;
+  display: flex;
+  width: 139px;
+  height: 27px;
+  padding-left: 1rem;
 }
 
 .footer_nav {
@@ -383,7 +390,12 @@ img {
 
 .card_restaurant_content {
   justify-content: space-between;
-  padding: 0 0 0 16px;
+}
+
+.card_restaurant_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
 .card_restaurant_title {
@@ -392,7 +404,12 @@ img {
 
 .card_restaurant_txt h3 {
   font-size: 18px;
-  margin: 16px 0 8px 0;
+  display: inline-block;
+  margin: 20px 0 0 15px;
+}
+
+.card_restaurant_subtitle {
+  margin: 5px 0 0 17px;
 }
 
 a {
