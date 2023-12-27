@@ -68,9 +68,8 @@ header, .info2,
 }
 
 .btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  opacity: 2;
+  opacity: 0.8;
 }
 
 .empty {
@@ -153,6 +152,7 @@ ul, li {
   min-height: 20.13rem;
   bottom: 7.5%;
   z-index: -1;
+  object-fit: cover;
 }
 
 img {
@@ -289,6 +289,8 @@ header .fa-arrow-left {
   background: var(--White, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   transition: padding 0.25s ease-in-out;
 }
 
@@ -314,8 +316,6 @@ header .fa-arrow-left {
 .card_box::after {
   content: "\f00c";
   font: var(--fa-font-solid);
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,7 +348,7 @@ input:checked + .card_box {
 }
 
 .cardbox_title_2 {
-  margin-bottom: -0.7rem;
+  max-width: 100%;
   margin-top: 0rem;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -359,11 +359,14 @@ input:checked + .card_box {
 }
 
 .cardbox_subtitle {
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
   font-size: 15px;
   margin: 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .cta {
@@ -378,4 +381,7 @@ input:checked + .card_box {
   font-size: 0.94rem;
   font-weight: 700;
   transition: margin 750ms ease-in-out;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
