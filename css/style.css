@@ -75,7 +75,6 @@ header, .info2,
   position: absolute;
   top: 83%;
   right: 10%;
-  transform: translateY(-50%);
   font-size: 25px;
   cursor: pointer;
 }
@@ -84,7 +83,6 @@ header, .info2,
   position: absolute;
   top: 83%;
   right: 10%;
-  transform: translateY(-50%);
   font-size: 25px;
   cursor: pointer;
   opacity: 0;
