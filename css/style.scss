@@ -87,6 +87,10 @@ body {
   background: #9356dc;
 }
 
+.fonctionnement .card_fonctionnement2:hover .fonction_icon {
+  color: #9356dc;
+}
+
 .fa-mobile-screen-button, .fa-list, 
 .fa-store {
   cursor: pointer;
@@ -94,13 +98,6 @@ body {
   height: 1.24rem;
   color: #7e7e7e;
   margin-left: 1rem;
-  &:hover {
-    color: #9356dc;  
-  }
-}
-
-.fa-store {
-  color: #9356dc;
 }
 
 /****section restaurant****/
