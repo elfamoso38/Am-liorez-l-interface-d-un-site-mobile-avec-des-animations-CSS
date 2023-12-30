@@ -41,19 +41,22 @@ header .fa-arrow-left {
     height: 4.5rem;
     display: flex;
     align-items: center;
-    flex: 1 0 0;
     gap: 5px;
     padding: 0.94rem 0 0.94rem 0.94rem;
     margin: 0.75rem 0 0.75rem 0;
     cursor: pointer;
     box-sizing: border-box;
     border-radius: 0.94rem;
+    overflow: hidden;
     background: var(--White, #fff);
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     transition: padding 0.25s ease-in-out;
+}
+
+.card_menus2:checked .cardbox_price {
+    padding-right: 70px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .card_menus2 {
@@ -87,7 +90,7 @@ header .fa-arrow-left {
     border-radius: 50% 50%;
     background: white;
     color: #99e2d0;
-    animation: 750ms ease-out;
+    
 }
 
 input:checked + .card_box {
@@ -101,11 +104,9 @@ input:checked + .card_box {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    min-width: 0;
+    min-width: 80px;
+    flex: 1;
     line-height: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     transition: width 750ms ease-in-out;
 }    
 
@@ -142,9 +143,7 @@ input:checked + .card_box {
     font-family: "roboto", sans-serif;
     font-size: 0.94rem;
     font-weight: 700;
-    transition: margin 750ms ease-in-out;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 100%;
+    overflow: hidden;
+    max-width: 200px;
 }
-

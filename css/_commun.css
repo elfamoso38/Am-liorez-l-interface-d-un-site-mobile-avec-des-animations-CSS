@@ -44,7 +44,7 @@ header, .info2,
 }
 
 .btn, .header_location, .card_fonctionnement_number,
-.card_fonctionnement2, .card_restaurant_content {
+.card_fonctionnement2, .card_restaurant_content, .loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,7 +179,7 @@ img {
   width: 85%;
 }
 
-.heart3 {
+.selector {
   display: none;
 }
 
