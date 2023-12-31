@@ -46,7 +46,7 @@ header, .info2,
 }
 
 .btn, .header_location, .card_fonctionnement_number,
-.card_fonctionnement2, .card_restaurant_content {
+.card_fonctionnement2, .card_restaurant_content, .loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,6 @@ ul, li {
 .img_intro {
   position: absolute;
   min-height: 20.13rem;
-  bottom: 7.5%;
   z-index: -1;
   object-fit: cover;
 }

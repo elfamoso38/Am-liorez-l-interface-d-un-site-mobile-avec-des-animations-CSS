@@ -146,7 +146,6 @@ ul, li {
 .img_intro {
   position: absolute;
   min-height: 20.13rem;
-  bottom: 7.5%;
   z-index: -1;
   object-fit: cover;
 }
