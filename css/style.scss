@@ -150,6 +150,23 @@ body {
     font-weight: 300;
   }
 
+  .empty {
+    position: absolute;
+    top: 83%;
+    right: 10%;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .full {
+    position: absolute;
+    top: 83%;
+    right: 10%;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0;
+  }
+
   /****section fonctionnement****/
 .fonctionnement {
   margin: 3.56rem 1.25rem;
@@ -391,22 +408,6 @@ a {
     max-width: 34rem;
   }
 
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 3rem;
-  }
-
-  .footer_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .footer_nav :nth-child(3) {
-    margin-left: 1.5rem;
-  }
   /****menu****/
   .intro {
     min-height: 23.93rem;
@@ -453,3 +454,4 @@ a {
     bottom: -30rem;
   }
 }
+

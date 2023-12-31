@@ -71,23 +71,6 @@ header, .info2,
   opacity: 0.8;
 }
 
-.empty {
-  position: absolute;
-  top: 83%;
-  right: 10%;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.full {
-  position: absolute;
-  top: 83%;
-  right: 10%;
-  font-size: 25px;
-  cursor: pointer;
-  opacity: 0;
-}
-
 .full:hover {
   color: transparent;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
@@ -130,7 +113,7 @@ ul, li {
 }
 
 .heart_menu {
-  position: relative;
+  margin-right: 26px;
 }
 
 .menus, footer {
@@ -147,7 +130,6 @@ ul, li {
 .img_intro {
   position: absolute;
   min-height: 20.13rem;
-  bottom: 7.5%;
   z-index: -1;
   object-fit: cover;
 }
@@ -234,6 +216,23 @@ footer {
 
 .footer_nav_icon {
   width: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+  .footer_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .footer_nav :nth-child(3) {
+    margin-left: 1.5rem;
+  }
 }
 
 body {
@@ -377,6 +376,23 @@ header {
 .info2 p {
   margin: 0.5rem 1.63rem 1.69rem 2.12rem;
   font-weight: 300;
+}
+
+.empty {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.full {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
 }
 
 /****section fonctionnement****/
@@ -606,20 +622,6 @@ a {
   .card_restaurant2 {
     width: 100%;
     max-width: 34rem;
-  }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 3rem;
-  }
-  .footer_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .footer_nav :nth-child(3) {
-    margin-left: 1.5rem;
   }
   /****menu****/
   .intro {
