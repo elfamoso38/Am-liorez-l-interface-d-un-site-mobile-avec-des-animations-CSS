@@ -331,6 +331,14 @@ input:checked + .card_box {
   transform: translate(-3.68rem);
 }
 
+input:checked + .cardbox_title {
+  width: 80%;
+}
+
+input:checked ~ .cardbox_price {
+  margin-right: 4.9rem;
+}
+
 .cardbox_title {
   width: 100%;
   margin: 0;
@@ -338,9 +346,10 @@ input:checked + .card_box {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  min-width: 80px;
   flex: 1;
   line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
   transition: width 750ms ease-in-out;
 }
 
@@ -360,10 +369,10 @@ input:checked + .card_box {
   font-weight: 300;
   font-size: 15px;
   margin: 0px;
+  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
 }
 
 .cta {
@@ -377,7 +386,5 @@ input:checked + .card_box {
   font-family: "roboto", sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 200px;
+  transition: 750ms ease-in-out;
 }
