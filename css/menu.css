@@ -303,7 +303,30 @@ header .fa-arrow-left {
   overflow: hidden;
   background: var(--White, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
   transition: padding 0.25s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes crescendo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes translateToRight {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 
 .card_menus2 {
