@@ -68,14 +68,8 @@ header .fa-arrow-left {
     transition: padding 0.25s ease-in-out;
 }
 
-.card_menus2:checked .cardbox_price {
-    padding-right: 70px;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-}
-
 .card_menus2 {
-    animation-delay: 300ms;
+    animation-delay: 750ms;
 }
 
 .card_box {
@@ -90,7 +84,8 @@ header .fa-arrow-left {
     align-items: center;
     border-radius: 0 0.94rem 0.94rem 0rem;
     background: #99e2d0;
-    transition: 400ms ease-out;
+    transition: transform 750ms ease-out;
+
 }
 
 .card_box::after {
@@ -167,7 +162,7 @@ input:checked ~ .cardbox_price {
     font-family: "roboto", sans-serif;
     font-size: 0.94rem;
     font-weight: 700;
-    transition: 750ms ease-in-out;
+    transition: 750ms ease-out;
 }
 
 @media (min-width: 768px) {
