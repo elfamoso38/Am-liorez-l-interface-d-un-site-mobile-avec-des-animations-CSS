@@ -96,7 +96,8 @@ header .fa-arrow-left {
     animation-delay: 750ms;
 }
 
-.card_box {
+
+ .card_box {
     position: absolute;
     top: 0;
     left: 100%;
@@ -108,8 +109,7 @@ header .fa-arrow-left {
     align-items: center;
     border-radius: 0 0.94rem 0.94rem 0rem;
     background: #99e2d0;
-    transition: transform 750ms ease-out;
-
+    transition: transform 750ms ease-out; 
 }
 
 .card_box::after {
@@ -124,18 +124,17 @@ header .fa-arrow-left {
     border-radius: 50% 50%;
     background: white;
     color: #99e2d0;
-    
 }
 
-input:checked + .card_box {
+.card_menus2:hover .card_box {
     transform: translate(-3.68rem);
 }
 
-input:checked + .cardbox_title {
+.card_menus2:hover ~ .cardbox_title {
     width: 80%;
 }
 
-input:checked ~ .cardbox_price {
+.card_menus2:hover ~ .cardbox_price {
     margin-right: 4.9rem;
 }
 
@@ -239,4 +238,3 @@ input:checked ~ .cardbox_price {
         bottom: -30rem;
       }
     }
-

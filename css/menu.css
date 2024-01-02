@@ -26,6 +26,7 @@ h1, h2 {
 p {
   font-family: "Roboto";
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .fw300 {
@@ -39,7 +40,7 @@ p {
 }
 
 header, .info2,
-.card_restaurant, .card_fonctionnement {
+.card_restaurant, .fonctionnement ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,15 +363,15 @@ header .fa-arrow-left {
   color: #99e2d0;
 }
 
-input:checked + .card_box {
+.card_menus2:hover .card_box {
   transform: translate(-3.68rem);
 }
 
-input:checked + .cardbox_title {
+.card_menus2:hover ~ .cardbox_title {
   width: 80%;
 }
 
-input:checked ~ .cardbox_price {
+.card_menus2:hover ~ .cardbox_price {
   margin-right: 4.9rem;
 }
 

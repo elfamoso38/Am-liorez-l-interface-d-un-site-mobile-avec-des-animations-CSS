@@ -25,6 +25,7 @@ h1, h2 {
 p {
   font-family: "Roboto";
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .fw300 {
@@ -38,7 +39,7 @@ p {
 }
 
 header, .info2,
-.card_restaurant, .card_fonctionnement {
+.card_restaurant, .fonctionnement ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,7 +317,10 @@ header {
   padding: 0 0 1.63rem 0.5rem;
 }
 
-.card_fonctionnement2 {
+.fonctionnement li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   width: 100%;
   max-width: 18rem;
@@ -341,7 +345,7 @@ header {
   background: #9356dc;
 }
 
-.fonctionnement .card_fonctionnement2:hover .fonction_icon {
+.fonctionnement li:hover .fonction_icon {
   color: #9356dc;
 }
 
