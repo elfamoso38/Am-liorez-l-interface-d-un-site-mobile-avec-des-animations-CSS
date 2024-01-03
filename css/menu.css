@@ -288,7 +288,7 @@ header .fa-arrow-left {
   font-weight: 100;
 }
 
-.card_menus2 {
+.card_menus article {
   position: relative;
   width: 100%;
   max-width: 21.81rem;
@@ -363,15 +363,15 @@ header .fa-arrow-left {
   color: #99e2d0;
 }
 
-.card_menus2:hover .card_box {
+.card_menus article:hover .card_box {
   transform: translate(-3.68rem);
 }
 
-.card_menus2:hover ~ .cardbox_title {
+.card_menus article:hover .cardbox_title {
   width: 80%;
 }
 
-.card_menus2:hover ~ .cardbox_price {
+.card_menus article:hover .cardbox_price {
   margin-right: 4.9rem;
 }
 
