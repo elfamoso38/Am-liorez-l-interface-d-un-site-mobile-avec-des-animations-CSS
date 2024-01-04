@@ -375,7 +375,7 @@ header .fa-arrow-left {
   margin-right: 4.9rem;
 }
 
-.cardbox_title {
+.card_menus div {
   width: 100%;
   margin: 0;
   display: flex;
@@ -389,7 +389,7 @@ header .fa-arrow-left {
   transition: width 750ms ease-in-out;
 }
 
-.cardbox_title_2 {
+.card_menus h3 {
   max-width: 100%;
   margin-top: 0rem;
   white-space: nowrap;
@@ -400,7 +400,7 @@ header .fa-arrow-left {
   font-weight: 900;
 }
 
-.cardbox_subtitle {
+.card_menus p {
   font-family: "roboto", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -453,7 +453,7 @@ header .fa-arrow-left {
   .card_menus {
     max-width: 39.62rem;
   }
-  .card_menus2 {
+  .card_menus article {
     max-width: 39.62rem;
   }
   .heart_menu {
