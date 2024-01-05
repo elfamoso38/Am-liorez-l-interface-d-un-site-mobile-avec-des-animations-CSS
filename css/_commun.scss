@@ -196,11 +196,11 @@ footer {
   padding-left: 1rem;
 }
 
-.footer_nav {
+footer nav {
   width: 100%;
 }
 
-.footer_nav_link {
+footer a {
   color: #fff;
   text-decoration: none;
   gap: 1rem;
@@ -228,13 +228,13 @@ footer {
     gap: 3rem;
   }
 
-  .footer_nav {
+  footer nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
 
-  .footer_nav :nth-child(3) {
+  footer nav :nth-child(3) {
     margin-left: 1.5rem;
   }
 }

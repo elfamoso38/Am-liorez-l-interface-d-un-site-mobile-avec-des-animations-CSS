@@ -226,7 +226,7 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .card_fonctionnement {
+  .fonctionnement ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -237,14 +237,14 @@ a {
 }
 
 @media (min-width: 1024px) and (min-width: 1440px) {
-  .card_fonctionnement {
+  .fonctionnement ul {
     max-width: 80rem;
     margin: auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .card_fonctionnement2 {
+  .fonctionnement li {
     width: 30%;
     min-width: 13rem;
     gap: 1.3rem;

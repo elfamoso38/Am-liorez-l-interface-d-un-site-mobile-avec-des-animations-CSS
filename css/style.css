@@ -198,11 +198,11 @@ footer {
   padding-left: 1rem;
 }
 
-.footer_nav {
+footer nav {
   width: 100%;
 }
 
-.footer_nav_link {
+footer a {
   color: #fff;
   text-decoration: none;
   gap: 1rem;
@@ -229,12 +229,12 @@ footer {
     justify-content: flex-end;
     gap: 3rem;
   }
-  .footer_nav {
+  footer nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
-  .footer_nav :nth-child(3) {
+  footer nav :nth-child(3) {
     margin-left: 1.5rem;
   }
 }
@@ -462,7 +462,7 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .card_fonctionnement {
+  .fonctionnement ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -473,14 +473,14 @@ a {
 }
 
 @media (min-width: 1024px) and (min-width: 1440px) {
-  .card_fonctionnement {
+  .fonctionnement ul {
     max-width: 80rem;
     margin: auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .card_fonctionnement2 {
+  .fonctionnement li {
     width: 30%;
     min-width: 13rem;
     gap: 1.3rem;
