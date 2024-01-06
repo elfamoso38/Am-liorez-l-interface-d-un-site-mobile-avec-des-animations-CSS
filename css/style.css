@@ -38,7 +38,7 @@ p {
   margin: 0.88rem 0;
 }
 
-header, .info2,
+header, .info,
 .card_restaurant, .fonctionnement ul {
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ header, .info2,
 }
 
 .btn, .header_location, .card_fonctionnement_number,
-.card_fonctionnement2, .card_restaurant_content, .loader {
+.fonctionnement li, .card_restaurant_content, .loader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,10 +102,6 @@ input {
 
 ul, li {
   list-style: none;
-}
-
-.heart_btnlike .fa-heart {
-  font-size: 1.37rem;
 }
 
 .heart {
@@ -170,7 +166,7 @@ img {
   display: none;
 }
 
-.card_menus_title {
+.card_menus h2 {
   width: 2.5rem;
   line-height: 2rem;
   border-bottom: 0.18rem solid #99e2d0;
@@ -187,7 +183,7 @@ footer {
   align-items: flex-start;
 }
 
-.footer_title {
+footer h4 {
   color: #fff;
   font-family: "Shrikhand", serif;
   font-size: 1.12rem;
@@ -249,7 +245,7 @@ header {
   width: 100%;
 }
 
-.header_shadow {
+header {
   position: relative;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -273,20 +269,17 @@ header {
 
 /****section info****/
 .info {
-  background: #f6f6f6;
-}
-
-.info2 {
   width: 100%;
   text-align: center;
   padding: 2.44rem 0 3.56rem 0;
+  background: #f6f6f6;
 }
 
-.info2 h1 {
+.info h1 {
   margin: 0 2.63rem;
 }
 
-.info2 p {
+.info p {
   margin: 0.5rem 1.63rem 1.69rem 2.12rem;
   font-weight: 300;
 }
@@ -368,7 +361,7 @@ header {
   gap: 1.12rem;
 }
 
-.card_restaurant2 {
+.restaurant article {
   width: 90%;
   max-width: 21.62rem;
   height: 15.68rem;
@@ -414,7 +407,7 @@ img {
   align-items: baseline;
 }
 
-.card_restaurant_title {
+.card_restaurant_txt h3 {
   margin: 5px 0 5px 0;
 }
 
@@ -424,7 +417,7 @@ img {
   margin: 20px 0 0 15px;
 }
 
-.card_restaurant_subtitle {
+.card_restaurant_txt p {
   margin: 5px 0 0 17px;
 }
 
@@ -489,7 +482,7 @@ a {
 }
 
 @media (min-width: 1440px) {
-  .card_fonctionnement2 {
+  .fonctionnement li {
     max-width: 20rem;
     margin: auto;
   }
@@ -532,7 +525,7 @@ a {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .card_restaurant2 {
+  .restaurant article {
     width: 100%;
     max-width: 34rem;
   }

@@ -37,7 +37,7 @@ body {
     margin: 0.88rem 0;
   }
 
-  header, .info2, 
+  header, .info, 
   .card_restaurant, .fonctionnement ul {
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ body {
   }
 
   .btn, .header_location, .card_fonctionnement_number, 
-  .card_fonctionnement2, .card_restaurant_content, .loader {
+  .fonctionnement li, .card_restaurant_content, .loader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,10 +100,6 @@ body {
 
   ul, li {
     list-style: none;
-  }
-
-  .heart_btnlike .fa-heart {
-    font-size: 1.37rem;
   }
   
   .heart {
@@ -168,7 +164,7 @@ img {
     display: none;
 }
 
-.card_menus_title {
+.card_menus h2 {
   width: 2.5rem;
   line-height: 2rem;
   border-bottom: 0.18rem solid #99e2d0;
@@ -185,7 +181,7 @@ footer {
   align-items: flex-start;
 } 
 
-.footer_title {
+footer h4 {
   color: #fff;
   font-family: "Shrikhand", serif;
   font-size: 1.12rem;
