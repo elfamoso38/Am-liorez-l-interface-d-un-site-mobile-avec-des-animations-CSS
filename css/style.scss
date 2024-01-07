@@ -1,10 +1,12 @@
 @import "_commun";
+@import "fonctionnement/_fonctionnement.scss";
+@import "animation/animation.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 body {
     text-align: center;
     margin: 0;
   }
-  
+
   /****header****/
   header {
     width: 100%;
@@ -67,56 +69,6 @@ body {
     opacity: 0;
   }
 
-  /****section fonctionnement****/
-.fonctionnement {
-  margin: 3.56rem 1.25rem;
-}
-
-.fonctionnement h2 {
-  padding: 0 0 1.63rem 0.5rem;
-}
-
-.fonctionnement li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 100%;
-  max-width: 18rem;
-  height: 4.52rem;
-  margin: auto;
-  position: relative;
-  margin-bottom: 1.56rem;
-  border-radius: 1.25rem;
-  background: #f6f6f6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  gap: 1.5rem;
-}
-
-.card_fonctionnement_number {
-  position: absolute;
-  left: -0.75rem;
-  color: #fff;
-  font-size: 0.88rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 1.5rem;
-  background: #9356dc;
-}
-
-.fonctionnement li:hover .fonction_icon {
-  color: #9356dc;
-}
-
-.fa-mobile-screen-button, .fa-list, 
-.fa-store {
-  cursor: pointer;
-  width: 0.81rem;
-  height: 1.24rem;
-  color: #7e7e7e;
-  margin-left: 1rem;
-}
-
 /****section restaurant****/
 .restaurant {
   background: #f6f6f6;
@@ -174,10 +126,6 @@ img {
 }
 
 .card_restaurant_txt h3 {
-  margin: 5px 0 5px 0;
-}
-
-.card_restaurant_txt h3 {
   font-size: 18px;
   display: inline-block;
   margin: 20px 0 0 15px;
@@ -193,67 +141,15 @@ a {
   text-decoration: none;
 }
 
+/****media queries****/
 @media (min-width:768px) {
-  .header_shadow {
+  header {
     box-shadow: none;
   }
 
-  .header {
+  header {
     height: 6rem;
     justify-content: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement {
-    width: 100%;
-    padding: 3.12rem 11.25rem;
-    margin: 0;
-  }
-}
-
-@media (min-width: 1440px) {
-  .fonctionnement {
-    padding: 3.12rem 0;
-  }
-
-  .fonctionnement h2 {
-    max-width: 80rem;
-    margin: auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2.28rem;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) and (min-width: 1440px) {
-  .fonctionnement ul {
-    max-width: 80rem;
-    margin: auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  .fonctionnement li {
-    width: 30%;
-    min-width: 13rem;
-    gap: 1.3rem;
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 1440px) {
-  .fonctionnement li {
-    max-width: 20rem;
-    margin: auto;
   }
 
   .restaurant h2 {
@@ -309,16 +205,6 @@ a {
   }
 
   /****menu****/
-  .intro {
-    min-height: 23.93rem;
-    margin-bottom: -4%;
-  }
-
-  .img_intro {
-    min-height: 23.93rem;
-    bottom: -10rem;
-  }
-
   .menus {
     width: 90%;
     max-width: 65.93rem;
@@ -349,8 +235,3 @@ a {
   }
 }
 
-@media (min-width: 1440px) {
-  .img_intro {
-    bottom: -30rem;
-  }
-}

@@ -1,15 +1,7 @@
 @import "_commun";
+@import "animation/animation.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-.intro {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 20.13rem;
-    background: none;
-    margin-bottom: -20%;
-    overflow: hidden;
-}
 
 header .fa-arrow-left {
     position: absolute;
@@ -49,69 +41,6 @@ header .fa-arrow-left {
     font-weight: 100;
 }
 
-.card_menus li {
-    position: relative;
-    width: 100%;
-    max-width: 21.81rem;
-    height: 4.5rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 0.94rem 0 0.94rem 0.94rem;
-    margin: 0.75rem 0 0.75rem 0;
-    cursor: pointer;
-    box-sizing: border-box;
-    border-radius: 0.94rem;
-    overflow: hidden;
-    background: var(--White, #fff);
-    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    animation: crescendo reverse 1000ms forwards,
-    translateToRight 750ms forwards;
-    transition: padding 0.25s ease-in-out;
-    opacity: 0;
-}
-
-@keyframes crescendo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes translateToRight {
-  from {
-    transform: translate(100%);
-  }
-  to {
-    transform: translate(0);
-  }
-}
-
-.card_menus li {
-    animation-delay: 750ms;
-}
-
-
- .card_box {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    bottom: 0;
-    right: 0;
-    width: 3.68rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 0 0.94rem 0.94rem 0rem;
-    background: #99e2d0;
-    transition: transform 750ms ease-out; 
-}
-
 .card_box::after {
     content: "\f00c";
     font: var(--fa-font-solid);
@@ -125,32 +54,6 @@ header .fa-arrow-left {
     background: white;
     color: #99e2d0;
 }
-
-.card_menus li:hover .card_box {
-    transform: translate(-3.68rem);
-}
-
-.card_menus li:hover .cardbox_title {
-    width: 80%;
-}
-
-.card_menus li:hover .cardbox_price {
-    margin-right: 4.9rem;
-}
-
-.card_menus div {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    line-height: normal;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: width 750ms ease-in-out;
-}    
 
 .card_menus h3 {
     max-width: 100%;
@@ -178,25 +81,12 @@ header .fa-arrow-left {
     margin: 2.5rem auto;
     text-decoration: none;
 }
-
-.cardbox_price {
-    margin: 1.25rem 1rem 0 1rem;
-    color: #353535;
-    font-family: "roboto", sans-serif;
-    font-size: 0.94rem;
-    font-weight: 700;
-    transition: 750ms ease-out;
-}
-
+/****media queries****/
 @media (min-width: 768px) {
-    .intro {
-        min-height: 23.93rem;
-        margin-bottom: -4%;
-      }
-    
       .img_intro {
         min-height: 23.93rem;
-        bottom: -10rem;
+        height: 360px;
+        margin-bottom: -40px;
       }
     
       .menus {
@@ -232,10 +122,3 @@ header .fa-arrow-left {
         left: 30rem;
       }
     }
-    
-    @media (min-width: 1440px) {
-      .img_intro {
-        bottom: -30rem;
-      }
-    }
-    

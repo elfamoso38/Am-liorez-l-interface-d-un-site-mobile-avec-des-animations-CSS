@@ -1,0 +1,140 @@
+/****boutton "explorer nos restaurants et "commender"****/
+.btn {
+  width: 13.62rem;
+  height: 3.12rem;
+  align-items: center;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-radius: 1.56rem;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: opacity 250ms, box-shadow 300ms;
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  opacity: 0.8;
+}
+
+/****animation du coeur****/
+.full:hover {
+  color: transparent;
+  background-image: linear-gradient(10deg, #ff79da, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 450ms;
+  opacity: 1;
+}
+
+.full:hover::after {
+  opacity: 0;
+}
+
+/****apparition des plats****/
+.card_menus h2 {
+  width: 2.5rem;
+  line-height: 2rem;
+  border-bottom: 0.18rem solid #99e2d0;
+  padding-left: 0;
+  animation: crescendo reverse 3000ms forwards;
+}
+
+.card_menus li {
+  position: relative;
+  width: 100%;
+  max-width: 21.81rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.94rem 0 0.94rem 0.94rem;
+  margin: 0.75rem 0 0.75rem 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 0.94rem;
+  overflow: hidden;
+  background: var(--White, #fff);
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
+  transition: padding 0.25s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes crescendo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes translateToRight {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.card_menus li {
+  animation-delay: 750ms;
+}
+
+/****animation de la coche****/
+.card_box {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  right: 0;
+  width: 3.68rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0.94rem 0.94rem 0rem;
+  background: #99e2d0;
+  transition: transform 750ms ease-out;
+}
+
+.card_menus li:hover .card_box {
+  transform: translate(-3.68rem);
+}
+
+.card_menus li:hover .cardbox_title {
+  width: 80%;
+}
+
+.card_menus li:hover .cardbox_price {
+  margin-right: 4.9rem;
+}
+
+.card_menus div {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 750ms ease-in-out;
+}
+
+.cardbox_price {
+  margin: 1.25rem 1rem 0 1rem;
+  color: #353535;
+  font-family: "roboto", sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  transition: 750ms ease-out;
+}
