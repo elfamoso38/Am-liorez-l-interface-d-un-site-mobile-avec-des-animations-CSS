@@ -64,7 +64,6 @@ input {
 
 .restaurant h2, .fonctionnement h2 {
   padding: 2rem 1.1rem;
-  margin-right: 20rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -90,38 +89,9 @@ ul, li {
   flex-direction: column;
 }
 
-.menus_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 img {
   display: block;
   max-width: 100%;
-}
-
-.menus {
-  width: 100%;
-  background: #f6f6f6;
-  border-radius: 2.5rem 2.5rem 0 0;
-  padding: 2rem 1.06rem 2.5rem 1.06rem;
-}
-
-.menus_title {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-  position: relative;
-}
-
-.menus h1 {
-  font-family: "Shrikhand", serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  width: 85%;
 }
 
 .selector {
@@ -249,16 +219,6 @@ footer a {
   }
 }
 
-@media (min-width: 1440px) {
-  .fonctionnement {
-    padding: 3.12rem 0;
-  }
-  .fonctionnement h2 {
-    max-width: 80rem;
-    margin: auto;
-  }
-}
-
 @media (min-width: 1024px) {
   .fonctionnement ul {
     display: flex;
@@ -354,7 +314,6 @@ footer a {
   background: var(--White, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
-  transition: padding 0.25s ease-in-out;
   opacity: 0;
 }
 
@@ -505,6 +464,30 @@ a {
   text-decoration: none;
 }
 
+/****media queries****/
+@media (min-width: 768px) {
+  .restaurant h2 {
+    max-width: 80rem;
+    padding-left: 0;
+  }
+  .card_restaurant {
+    max-width: 80rem;
+    margin: auto;
+  }
+  .restaurant {
+    padding: 0 12.5% 1.88rem 12.5%;
+  }
+  .card_restaurant {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .restaurant article {
+    width: 100%;
+    max-width: 34rem;
+  }
+}
+
 body {
   text-align: center;
   margin: 0;
@@ -574,54 +557,9 @@ header {
 /****media queries****/
 @media (min-width: 768px) {
   header {
-    box-shadow: none;
-  }
-  header {
     height: 6rem;
     justify-content: center;
-  }
-  .restaurant h2 {
-    max-width: 80rem;
-    margin: auto;
-  }
-  .card_restaurant {
-    max-width: 80rem;
-    margin: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .restaurant {
-    padding: 0 12.5% 1.88rem 12.5%;
-  }
-  .restaurant h2 {
-    padding-left: 0;
-  }
-  .card_restaurant {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .card_restaurant :nth-child(1) {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .card_restaurant :nth-child(2) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .card_restaurant :nth-child(3) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .card_restaurant :nth-child(4) {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .restaurant article {
-    width: 100%;
-    max-width: 34rem;
+    box-shadow: none;
   }
   .heart_menu {
     top: 0.65rem;

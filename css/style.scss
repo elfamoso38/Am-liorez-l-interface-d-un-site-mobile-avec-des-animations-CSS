@@ -72,64 +72,9 @@ body {
 /****media queries****/
 @media (min-width:768px) {
   header {
-    box-shadow: none;
-  }
-
-  header {
     height: 6rem;
     justify-content: center;
-  }
-
-  .restaurant h2 {
-    max-width: 80rem;
-    margin: auto;
-  }
-
-  .card_restaurant {
-    max-width: 80rem;
-    margin: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .restaurant {
-    padding: 0 12.5% 1.88rem 12.5%;
-  }
-
-  .restaurant h2 {
-    padding-left: 0;
-  }
-
-  .card_restaurant {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .card_restaurant :nth-child(1) {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .card_restaurant :nth-child(2) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .card_restaurant :nth-child(3) {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .card_restaurant :nth-child(4) {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .restaurant article {
-    width: 100%;
-    max-width: 34rem;
+    box-shadow: none;
   }
 
   .heart_menu {

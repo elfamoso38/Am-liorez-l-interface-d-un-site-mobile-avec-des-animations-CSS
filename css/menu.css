@@ -65,7 +65,6 @@ input {
 
 .restaurant h2, .fonctionnement h2 {
   padding: 2rem 1.1rem;
-  margin-right: 20rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -91,38 +90,9 @@ ul, li {
   flex-direction: column;
 }
 
-.menus_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 img {
   display: block;
   max-width: 100%;
-}
-
-.menus {
-  width: 100%;
-  background: #f6f6f6;
-  border-radius: 2.5rem 2.5rem 0 0;
-  padding: 2rem 1.06rem 2.5rem 1.06rem;
-}
-
-.menus_title {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-  position: relative;
-}
-
-.menus h1 {
-  font-family: "Shrikhand", serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  width: 85%;
 }
 
 .selector {
@@ -252,7 +222,6 @@ footer a {
   background: var(--White, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
-  transition: padding 0.25s ease-in-out;
   opacity: 0;
 }
 
@@ -419,6 +388,29 @@ header .fa-arrow-left {
 .cta {
   margin: 2.5rem auto;
   text-decoration: none;
+}
+
+.menus {
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 1.06rem 2.5rem 1.06rem;
+}
+
+.menus_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.menus h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  width: 85%;
 }
 
 /****media queries****/

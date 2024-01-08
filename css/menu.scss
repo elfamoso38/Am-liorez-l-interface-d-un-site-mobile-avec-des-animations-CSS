@@ -91,6 +91,29 @@ header .fa-arrow-left {
     margin: 2.5rem auto;
     text-decoration: none;
 }
+
+.menus {
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 1.06rem 2.5rem 1.06rem;
+}
+
+.menus_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+}
+
+.menus h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    width: 85%;
+  }
 /****media queries****/
 @media (min-width: 768px) {
       .img_intro {
@@ -132,5 +155,3 @@ header .fa-arrow-left {
         left: 30rem;
       }
     }
-
-    
