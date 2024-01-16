@@ -271,6 +271,9 @@ footer a {
   border-bottom: 0.18rem solid #99e2d0;
   padding-left: 0;
   animation: crescendo reverse 3s forwards;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 2.5rem 0 0.75rem 0;
 }
 
 .card_menus li {
@@ -509,6 +512,7 @@ header .fa-arrow-left {
   background: #f6f6f6;
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 2rem 1.06rem 2.5rem 1.06rem;
+  gap: 40px;
 }
 
 @media (min-width: 768px) {

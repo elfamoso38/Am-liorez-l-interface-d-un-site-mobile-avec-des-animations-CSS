@@ -116,6 +116,7 @@ header .fa-arrow-left {
   background: #f6f6f6;
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 2rem 1.06rem 2.5rem 1.06rem;
+  gap: 40px;
   @media (min-width: 768px) {
       width: 90%;
       max-width: 65.93rem;
@@ -149,4 +150,3 @@ header .fa-arrow-left {
         min-width: 17rem;
       }
   }
-  

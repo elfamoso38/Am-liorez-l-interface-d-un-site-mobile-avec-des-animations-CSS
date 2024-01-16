@@ -116,6 +116,9 @@
   border-bottom: 0.18rem solid #99e2d0;
   padding-left: 0;
   animation: crescendo reverse 3s forwards;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 2.5rem 0 0.75rem 0;
 }
 
 .card_menus li {
