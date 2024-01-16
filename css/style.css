@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   text-align: center;
   margin: 0;
@@ -107,6 +108,15 @@ footer {
   align-items: flex-start;
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+}
+
 footer h4 {
   color: #fff;
   font-family: "Shrikhand", serif;
@@ -144,12 +154,6 @@ footer a {
 
 /****media queries****/
 @media (min-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 3rem;
-  }
   footer nav {
     display: flex;
     flex-direction: row;
@@ -294,7 +298,7 @@ footer a {
   line-height: 2rem;
   border-bottom: 0.18rem solid #99e2d0;
   padding-left: 0;
-  animation: crescendo reverse 3000ms forwards;
+  animation: crescendo reverse 3s forwards;
 }
 
 .card_menus li {
@@ -313,7 +317,7 @@ footer a {
   overflow: hidden;
   background: var(--White, #fff);
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  animation: crescendo reverse 1000ms forwards, translateToRight 750ms forwards;
+  animation: crescendo reverse 1s forwards, translateToRight 750ms forwards;
   opacity: 0;
 }
 
@@ -436,6 +440,8 @@ img {
   height: 1.81rem;
   color: #008766;
   background: #99e2d0;
+  font-family: "roboto";
+  font-weight: 500;
 }
 
 .card_restaurant_content {

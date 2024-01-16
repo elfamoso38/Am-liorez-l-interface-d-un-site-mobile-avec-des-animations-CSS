@@ -104,6 +104,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: 3rem;
+    }
 } 
 
 footer h4 {
@@ -142,13 +148,6 @@ footer a {
 }
 /****media queries****/
 @media (min-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 3rem;
-  }
-
   footer nav {
     display: flex;
     flex-direction: row;
