@@ -1,3 +1,77 @@
+/****loader****/
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
+  animation: loader 3s forwards;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.box p {
+  position: absolute;
+  top: 50%;
+  font-family: "Shrikhand";
+  background: linear-gradient( #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.circle {
+  display: flex;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  animation: 1s linear infinite
+  alternate boxCircle, 3s linear infinite spinning;
+  padding-top: 340px;
+}
+/****keyframes loader****/
+@keyframes boxCircle {
+from {
+  box-shadow:
+  0 0 0 #9356DC,
+  0 0 0 #FF79DA
+}
+to {
+  box-shadow:
+  10px 0 #9356DC,
+  0 10px #FF79DA
+}
+}
+
+@keyframes spinning {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+@keyframes loader {
+0% {
+  z-index: 100;
+  opacity: 1;
+}
+95% {
+  z-index: 100;
+  opacity: 1;
+  background-color: white;
+}
+100% {
+  z-index: -100;
+  opacity: 0;
+  background-color: transparent;
+}
+}
 /****boutton "explorer nos restaurants et "commender"****/
 .btn {
     width: 13.62rem;
@@ -25,9 +99,15 @@
     background-clip: text;
     transition: all 450ms;
     opacity: 1;
-    &::after {
-      opacity: 0;
     }
+
+    .full {
+      color: transparent;
+      background-image: linear-gradient(10deg, #ff79da, #9356DC);
+      -webkit-background-clip: text;
+      background-clip: text;
+      transition: all 750ms;
+      opacity: 0;  
     }
 
     /****apparition des plats****/
@@ -55,11 +135,26 @@
         overflow: hidden;
         background: var(--White, #fff);
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-        animation: crescendo reverse 1s forwards,
+        animation: crescendo reverse 2s forwards,
         translateToRight 750ms forwards;
         opacity: 0;
+        @media (min-width: 768px) {
+            max-width: 39.62rem;
+          }
+        }
+    .card_menus .anim_1 {
+      animation-delay: 300ms;
     }
-    
+
+    .card_menus .anim_2 {
+      animation-delay: 600ms;
+    }
+
+    .card_menus .anim_3 {
+      animation-delay: 900ms;
+    }
+
+    /****keyframes apparition des plats****/
     @keyframes crescendo {
       0% {
         opacity: 1;
@@ -80,11 +175,7 @@
         transform: translate(0);
       }
     }
-    
-    .card_menus li {
-        animation-delay: 750ms;
-    }
-    
+
     /****animation de la coche****/
      .card_box {
         position: absolute;
