@@ -27,10 +27,6 @@ body {
     font-weight: 500;
   }
 
-  .fw300 {
-    font-weight: 100;
-  }
-
   .header_logo {
     width: 40%;
     max-width: 10.12rem;
@@ -91,7 +87,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  @media (min-width: 768px) {
+    @media (min-width: 768px) {
       display: flex;
       flex-direction: row-reverse;
       justify-content: flex-end;
@@ -122,21 +118,16 @@ footer {
     display: flex;
     margin: 0.44rem;
   }
+  .footer_nav_icon {
+  width: 1rem;
 }
-.fw500 {
-  font-weight: 500;
+    @media (min-width: 768px) {
+      nav :nth-child(3) {
+        margin-left: 1.5rem;
+      }
+    }
 }
 
 .fa-solid {
   font-weight: 900;
-}
-
-.footer_nav_icon {
-  width: 1rem;
-}
-
-@media (min-width: 768px) {
-  nav :nth-child(3) {
-    margin-left: 1.5rem;
-  }
 }

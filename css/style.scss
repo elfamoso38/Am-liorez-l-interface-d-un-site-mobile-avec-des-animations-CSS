@@ -39,16 +39,16 @@
     text-align: center;
     padding: 2.44rem 0 3.56rem 0;
     background: #f6f6f6;
+      h1 {
+      margin: 0 2.63rem;
+    }
+    
+      p {
+      margin: 0.5rem 1.63rem 1.69rem 2.12rem;
+      font-weight: 300;
+    }
   }
-  
-  .info h1 {
-    margin: 0 2.63rem;
-  }
-  
-  .info p {
-    margin: 0.5rem 1.63rem 1.69rem 2.12rem;
-    font-weight: 300;
-  }
+
 /****coeur****/
   .empty {
     position: absolute;

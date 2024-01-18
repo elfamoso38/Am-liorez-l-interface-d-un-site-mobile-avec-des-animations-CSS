@@ -5,43 +5,41 @@
     display: flex;
     flex-direction: column;
     padding-top: 49px;
-  }
-  
-  .restaurant h2 {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0px 0px 26px 20px;
-    margin: 0;
-    @media (min-width: 768px) {
-      padding: 0px 0px 26px 98px
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0px 0px 26px 20px;
+      margin: 0;
+      @media (min-width: 768px) {
+        padding: 0px 0px 26px 98px
+      }
+      @media (min-width: 1440px) {
+        padding-left: 11.9rem;
+      }
     }
-    @media (min-width: 1440px) {
-      padding-left: 11.9rem;
+    article {
+      width: 90%;
+      height: 15.68rem;
+      background-color: #fff;
+      border-radius: 0.94rem;
+      position: relative;
+      @media (min-width: 768px) {
+          width: 35.5%;
+        }
     }
-  }
+}
 
-  .card_restaurant {
+.card_restaurant {
     gap: 18px;
-    @media (min-width: 768px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        gap: 25px 50px;
-        justify-content: center;
-      }
-  }
-  
-  .restaurant article {
-    width: 90%;
-    height: 15.68rem;
-    background-color: #fff;
-    border-radius: 0.94rem;
-    position: relative;
-    @media (min-width: 768px) {
-        width: 35.5%;
-      }
+  @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      gap: 25px 50px;
+      justify-content: center;
+    }
   }
   
   .image_card {
@@ -81,21 +79,20 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-  }
-  
-  .card_restaurant_txt h3 {
-    font-size: 18px;
-    display: inline-block;
-    margin: 20px 0 0 15px;
-  }
-  
-  .card_restaurant_txt p {
-    margin: 5px 0 0 17px;
-    font-weight: 100;
-  }
-  
+      h3 {
+      font-size: 18px;
+      display: inline-block;
+      margin: 20px 0 0 15px;
+    }
+      p {
+        margin: 5px 0 0 17px;
+        font-weight: 100;
+    }
+}
+
   a {
     color: inherit;
     text-decoration: none;
   }
+  
   

@@ -29,10 +29,6 @@ p {
   font-weight: 500;
 }
 
-.fw300 {
-  font-weight: 100;
-}
-
 .header_logo {
   width: 40%;
   max-width: 10.12rem;
@@ -135,22 +131,18 @@ footer a {
   margin: 0.44rem;
 }
 
-.fw500 {
-  font-weight: 500;
-}
-
-.fa-solid {
-  font-weight: 900;
-}
-
-.footer_nav_icon {
+footer .footer_nav_icon {
   width: 1rem;
 }
 
 @media (min-width: 768px) {
-  nav :nth-child(3) {
+  footer nav :nth-child(3) {
     margin-left: 1.5rem;
   }
+}
+
+.fa-solid {
+  font-weight: 900;
 }
 
 /****loader****/
@@ -442,42 +434,9 @@ header .fa-arrow-left {
   }
 }
 
-.card_menus .card_menus h2 {
+.card_menus h2 {
   font-size: 1rem;
   margin: 2.5rem 0 0.75rem 0;
-}
-
-.empty {
-  font-size: 25px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-}
-
-.full {
-  font-size: 25px;
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
-  top: 10px;
-}
-
-.fw300 {
-  font-weight: 100;
-}
-
-.card_box::after {
-  content: "\f00c";
-  font: var(--fa-font-solid);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.2rem;
-  height: 1.2rem;
-  margin: auto;
-  border-radius: 50% 50%;
-  background: white;
-  color: #99e2d0;
 }
 
 .card_menus h3 {
@@ -502,6 +461,35 @@ header .fa-arrow-left {
   text-overflow: ellipsis;
 }
 
+.empty {
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+}
+
+.full {
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+}
+
+.card_box::after {
+  content: "\f00c";
+  font: var(--fa-font-solid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: auto;
+  border-radius: 50% 50%;
+  background: white;
+  color: #99e2d0;
+}
+
 .cta {
   margin: 2.5rem auto;
   text-decoration: none;
@@ -524,6 +512,20 @@ header .fa-arrow-left {
   }
 }
 
+.menus h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  width: 85%;
+}
+
+@media (min-width: 768px) {
+  .menus h1 {
+    width: 20%;
+    min-width: 17rem;
+  }
+}
+
 .menus_title {
   width: 100%;
   display: flex;
@@ -539,19 +541,5 @@ header .fa-arrow-left {
     max-width: 39.62rem;
     justify-content: center;
     margin: auto;
-  }
-}
-
-.menus h1 {
-  font-family: "Shrikhand", serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  width: 85%;
-}
-
-@media (min-width: 768px) {
-  .menus h1 {
-    width: 20%;
-    min-width: 17rem;
   }
 }

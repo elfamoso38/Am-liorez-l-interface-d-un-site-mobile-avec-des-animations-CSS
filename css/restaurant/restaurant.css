@@ -26,6 +26,20 @@
   }
 }
 
+.restaurant article {
+  width: 90%;
+  height: 15.68rem;
+  background-color: #fff;
+  border-radius: 0.94rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .restaurant article {
+    width: 35.5%;
+  }
+}
+
 .card_restaurant {
   gap: 18px;
 }
@@ -39,20 +53,6 @@
     padding: 0;
     gap: 25px 50px;
     justify-content: center;
-  }
-}
-
-.restaurant article {
-  width: 90%;
-  height: 15.68rem;
-  background-color: #fff;
-  border-radius: 0.94rem;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .restaurant article {
-    width: 35.5%;
   }
 }
 

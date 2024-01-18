@@ -8,77 +8,70 @@
         max-width: 1200px;
         margin: auto;
       }
-  }
-
-  .fonctionnement h2 {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 10px;
-    @media (min-width: 1440px) {
-      padding-left: 1.5rem;
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 10px;
+      @media (min-width: 1440px) {
+        padding-left: 1.5rem;
+      }
     }
-  }
-  
-  .fonctionnement ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    @media (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      }
-    @media (min-width: 1440px) {
-      gap: 0;
-      margin: 5px;
-    }  
-  }
-  
-  .fonctionnement li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 95%;
-    height: 4.52rem;
-    margin: auto;
-    position: relative;
-    border-radius: 1.25rem;
-    background: #f6f6f6;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    gap: 1.5rem;
-    padding-right: 20px;
-    @media (min-width: 1024px) and (min-width: 1440px) {
-        width: 322.49px;
-        gap: 1.3rem;
-        margin: auto;
-      }
-  }
-  
-  .card_fonctionnement_number {
-    position: absolute;
-    left: -0.75rem;
-    color: #fff;
-    font-size: 0.88rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 1.5rem;
-    background: #9356dc;
-  }
-  
-  .fonctionnement li:hover .fonction_icon {
-    color: #9356dc;
-  }
-  
-  .fa-mobile-screen-button, .fa-list, 
-  .fa-store {
-    cursor: pointer;
-    width: 0.81rem;
-    height: 1.24rem;
-    color: #7e7e7e;
-    margin-left: -20px;
-  }
-  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      @media (min-width: 768px) {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+      @media (min-width: 1440px) {
+        gap: 0;
+        margin: 5px;
+      }  
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 95%;
+      height: 4.52rem;
+      margin: auto;
+      position: relative;
+      border-radius: 1.25rem;
+      background: #f6f6f6;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+      gap: 1.5rem;
+      padding-right: 20px;
+      @media (min-width: 1024px) and (min-width: 1440px) {
+          width: 322.49px;
+          gap: 1.3rem;
+          margin: auto;
+        }
+    }
+}
+    .card_fonctionnement_number {
+      position: absolute;
+      left: -0.75rem;
+      color: #fff;
+      font-size: 0.88rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 1.5rem;
+      background: #9356dc;
+    }
+    .fonctionnement li:hover .fonction_icon {
+      color: #9356dc;
+    }
+    .fa-mobile-screen-button, .fa-list, 
+    .fa-store {
+      cursor: pointer;
+      width: 0.81rem;
+      height: 1.24rem;
+      color: #7e7e7e;
+      margin-left: -20px;
+    }

@@ -29,10 +29,6 @@ p {
   font-weight: 500;
 }
 
-.fw300 {
-  font-weight: 100;
-}
-
 .header_logo {
   width: 40%;
   max-width: 10.12rem;
@@ -104,7 +100,7 @@ footer {
   }
 }
 
-h4 {
+footer h4 {
   color: #fff;
   font-family: "Shrikhand", serif;
   font-size: 1.12rem;
@@ -115,12 +111,12 @@ h4 {
   padding-left: 1rem;
 }
 
-nav {
+footer nav {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  nav {
+  footer nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -135,22 +131,18 @@ footer a {
   margin: 0.44rem;
 }
 
-.fw500 {
-  font-weight: 500;
-}
-
-.fa-solid {
-  font-weight: 900;
-}
-
-.footer_nav_icon {
+footer .footer_nav_icon {
   width: 1rem;
 }
 
 @media (min-width: 768px) {
-  nav :nth-child(3) {
+  footer nav :nth-child(3) {
     margin-left: 1.5rem;
   }
+}
+
+.fa-solid {
+  font-weight: 900;
 }
 
 /****section fonctionnement****/
@@ -370,6 +362,9 @@ footer a {
   border-bottom: 0.18rem solid #99e2d0;
   padding-left: 0;
   animation: crescendo reverse 3s forwards;
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 2.5rem 0 0.75rem 0;
 }
 
 .card_menus li {
@@ -510,6 +505,20 @@ footer a {
   }
 }
 
+.restaurant article {
+  width: 90%;
+  height: 15.68rem;
+  background-color: #fff;
+  border-radius: 0.94rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .restaurant article {
+    width: 35.5%;
+  }
+}
+
 .card_restaurant {
   gap: 18px;
 }
@@ -523,20 +532,6 @@ footer a {
     padding: 0;
     gap: 25px 50px;
     justify-content: center;
-  }
-}
-
-.restaurant article {
-  width: 90%;
-  height: 15.68rem;
-  background-color: #fff;
-  border-radius: 0.94rem;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .restaurant article {
-    width: 35.5%;
   }
 }
 
