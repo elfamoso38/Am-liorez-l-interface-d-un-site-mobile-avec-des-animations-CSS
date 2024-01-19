@@ -11,16 +11,15 @@
   animation: loader 3s forwards;
   overflow: hidden;
   z-index: 2;
-}
-
-.box p {
-  position: absolute;
-  top: 50%;
-  font-family: "Shrikhand";
-  background: linear-gradient( #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  p {
+    position: absolute;
+    top: 50%;
+    font-family: "Shrikhand";
+    background: linear-gradient( #ff79da, #9356dc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+  }
 }
 
 .circle {
@@ -144,8 +143,9 @@ to {
         @media (min-width: 768px) {
             max-width: 39.62rem;
           }
-        }
-    .card_menus .anim_1 {
+      }
+    
+      .card_menus .anim_1 {
       animation-delay: 300ms;
     }
 

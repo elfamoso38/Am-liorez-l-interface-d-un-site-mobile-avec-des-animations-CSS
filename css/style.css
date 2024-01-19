@@ -483,19 +483,19 @@ footer .footer_nav_icon {
   padding-bottom: 4.12rem;
   display: flex;
   flex-direction: column;
-  padding-top: 49px;
 }
 
 .restaurant h2 {
   display: flex;
   justify-content: flex-start;
-  padding: 0px 0px 26px 20px;
+  padding: 2rem 1.1rem;
   margin: 0;
 }
 
 @media (min-width: 768px) {
   .restaurant h2 {
-    padding: 0px 0px 26px 98px;
+    padding: 0 12.5% 1.88rem 12.5%;
+    padding-top: 49px;
   }
 }
 
