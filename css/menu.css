@@ -29,6 +29,15 @@ p {
   font-weight: 500;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fa-solid {
+  font-weight: 900;
+}
+
 .header_logo {
   width: 40%;
   max-width: 10.12rem;
@@ -139,10 +148,6 @@ footer .footer_nav_icon {
   footer nav :nth-child(3) {
     margin-left: 1.5rem;
   }
-}
-
-.fa-solid {
-  font-weight: 900;
 }
 
 /****loader****/
