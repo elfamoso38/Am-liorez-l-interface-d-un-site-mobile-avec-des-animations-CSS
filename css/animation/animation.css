@@ -105,7 +105,6 @@
 .card_menus li {
   position: relative;
   width: 100%;
-  max-width: 21.81rem;
   height: 4.5rem;
   display: flex;
   align-items: center;
@@ -120,12 +119,6 @@
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   animation: crescendo reverse 2s forwards, translateToRight 750ms forwards;
   opacity: 0;
-}
-
-@media (min-width: 768px) {
-  .card_menus li {
-    max-width: 39.62rem;
-  }
 }
 
 .card_menus .anim_1 {

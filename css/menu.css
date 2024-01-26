@@ -257,7 +257,6 @@ footer .footer_nav_icon {
 .card_menus li {
   position: relative;
   width: 100%;
-  max-width: 21.81rem;
   height: 4.5rem;
   display: flex;
   align-items: center;
@@ -272,12 +271,6 @@ footer .footer_nav_icon {
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   animation: crescendo reverse 2s forwards, translateToRight 750ms forwards;
   opacity: 0;
-}
-
-@media (min-width: 768px) {
-  .card_menus li {
-    max-width: 39.62rem;
-  }
 }
 
 .card_menus .anim_1 {
@@ -411,7 +404,6 @@ header .fa-arrow-left {
 .card_menus {
   width: 100%;
   margin: auto;
-  max-width: 21.81rem;
 }
 
 @media (min-width: 768px) {
