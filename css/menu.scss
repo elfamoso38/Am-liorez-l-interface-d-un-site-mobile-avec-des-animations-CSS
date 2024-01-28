@@ -38,6 +38,21 @@ header .fa-arrow-left {
       margin-bottom: -40px;
     }
 }
+
+.img_intro2 {
+    position: relative;
+    min-height: 20.13rem;
+    z-index: -1;
+    object-fit: cover;
+    margin-bottom: -20%;
+    width: 100%;
+    height: 275px;
+    @media (min-width: 768px) {
+        min-height: 23.93rem;
+        height: 360px;
+        margin-bottom: -40px;
+      }  
+}
 /****page menu****/
 .card_menus {
     width: 100%;
